@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3c109abd23.js" crossorigin="anonymous"></script>
+    <title>FreeCodeCamp - Certificate</title>
+</head>
+
+<body>
+    <div class="flex text-center mt-5">
+        <h1 id="title">FreeCodeCamp</h1>
+        <p id="description" class="font-italic">FreeCodeCamp Certification Project <i class="fa fa-free-code-camp"
+                aria-hidden="true"></i></p>
+    </div>
+    <div class="container bg-light p-4 align-content-center mb-5">
+        <form action="" id="survey-form" class="">
+            <div class="form-group">
+                <label id="name-label" for="name-input">Name : </label>
+                <input type="text" name="name-input" id="name" class="form-control" required
+                    placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email-input">Email : </label>
+                <input type="email" name="email-input" id="email" class="form-control" required
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number-input">Age : </label>
+                <input type="number" min="10" max="99" name="number-input" id="number" class="form-control" required
+                    placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown-input">Which position do you want to apply?</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option value="" disabled selected>Select role</option>
+                    <option value="front">Front-end Website Development</option>
+                    <option value="back">Back-end Website Development</option>
+                    <option value="devop">DevOps Engineer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="mb-1">How experienced are you with HTML and CSS?<br></p>
+                <div class="form-check-inline">
+                    <label class="form-check">
+                        <input type="radio" name="exp" id="radiov" value="vexp">
+                        Very experienced
+                    </label>
+                    <label class="form-check">
+                        <input type="radio" name="exp" id="radiom" value="moderate">
+                        Moderately experienced
+                    </label>
+                    <label class="form-check">
+                        <input type="radio" name="exp" id="radion" value="unexp">
+                        Not experienced
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="mb-0">What do you want to achieve in this company?</p>
+                <small class="font-italic ">(Check all that apply to you)</small>
+                <label class="form-check">
+                    <input type="checkbox" name="check" id="check1" value="experience">
+                    Experience
+                </label>
+                <label class="form-check">
+                    <input type="checkbox" name="check" id="check2" value="connection">
+                    Connection
+                </label>
+                <label class="form-check">
+                    <input type="checkbox" name="check" id="check3" value="knowledge">
+                    Knowledge
+                </label>
+                <label class="form-check">
+                    <input type="checkbox" name="check" id="check4" value="money">
+                    Money
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="mb-2"><i class="fa fa-comment-o" aria-hidden="true"></i> One word about yourself</p>
+                <textarea name="" id="" cols="30" rows="1" class="p-2 form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" class="btn btn-danger">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
